@@ -1,4 +1,4 @@
-alert("Atrapalos yaa!");
+//alert("Atrapalos yaa!");
 
 function Pokemon (nombre, color, poderDeAtaque){
 	this.nombre = nombre;
@@ -26,6 +26,6 @@ Pikachu.atacar(Charmander)
 
 console.log(Charmander.nombre + " " + Charmander.color + " " + Charmander.vida)
 
-document.write(Pikachu.nombre + " " + Pikachu.color + " " + Pikachu.vida+ " / ") 
+document.write(Pikachu.nombre + " " + Pikachu.color + " " + Pikachu.vida+ "  /  ") 
 
 document.write(Charmander.nombre + " " + Charmander.color + " " + Charmander.vida)
