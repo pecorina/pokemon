@@ -21,11 +21,14 @@ function Pokemon (nombre, color, poderDeAtaque){
 
 const Pikachu = new Pokemon ('Pikachu','Amarillo',100) 
 const Charmander = new Pokemon ('Charmander','Rojo',20)
+const Patata = new Pokemon ('Patata', 'cafe',70)
+const Miauraur = new Pokemon ('Miauraur', 'blanco',170)
 
 Pikachu.atacar(Charmander)
 
-console.log(Charmander.nombre + " " + Charmander.color + " " + Charmander.vida)
+console.log(Charmander.nombre + " " + Charmander.color + " " + Charmander.vida + " " + Charmander.poderDeAtaque)
 
 document.write(Pikachu.nombre + " " + Pikachu.color + " " + Pikachu.vida+ "  /  ") 
 
 document.write(Charmander.nombre + " " + Charmander.color + " " + Charmander.vida)
+
