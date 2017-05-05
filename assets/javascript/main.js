@@ -4,9 +4,9 @@ function Pokemon (nombre, color, poderDeAtaque){
 	this.nombre = nombre;
 	this.color = color;
 
-	this.nivelDeAmistad = 0;
+	this.nivelDeAmistad = nivelDeAmistad;
 
-	this.vida = 100;
+	this.vida = vida;
 	this.poderDeAtaque = poderDeAtaque;
 	this.mostrarPokemon = function(){
 		return('Hola, soy '+this.nombre +'y soy de color'+ this.color);
@@ -19,16 +19,33 @@ function Pokemon (nombre, color, poderDeAtaque){
 	}
 }
 
-const Pikachu = new Pokemon ('Pikachu','Amarillo',100) 
-const Charmander = new Pokemon ('Charmander','Rojo',20)
-const Patata = new Pokemon ('Patata', 'cafe',70)
-const Miauraur = new Pokemon ('Miauraur', 'blanco',170)
+//const Pikachu = new Pokemon ('Pikachu','Amarillo',100) 
+//const Charmander = new Pokemon ('Charmander','Rojo',20)
+//const Patata = new Pokemon ('Patata', 'cafe',70)
+//const Miauraur = new Pokemon ('Miauraur', 'blanco',50)
 
-Pikachu.atacar(Charmander)
+function pelea(){
+	var button1 = document.getElementById("boton1").value;
+	var button2 = document.getElementById("boton2").value;
+    
+    var pokemon1 = new Pokemon('Patata', 'Cafe', 70);
+    var pokemon2 = new Pokemon('Miauraur', 'blanco', 50);
 
-console.log(Charmander.nombre + " " + Charmander.color + " " + Charmander.vida + " " + Charmander.poderDeAtaque)
+    var resultado = document.getElementById("imprimir");
+    var mostrar = (pokemon1.nombre + "atacó a " + pokemon2.nombre);
+    resultado.innerHTML= mostrar;
+}
 
-document.write(Pikachu.nombre + " " + Pikachu.color + " " + Pikachu.vida+ "  /  ") 
+//document.write(pelea();)
+//var pokemon1 = document.getElementById(pokemon1)
+//var pokemon2 = document.getElementById(pokemon2)
 
-document.write(Charmander.nombre + " " + Charmander.color + " " + Charmander.vida)
+
+//Pikachu.atacar(Charmander)
+
+//console.log(Charmander.nombre + " " + Charmander.color + " " + Charmander.vida)
+
+//document.write(Pikachu.nombre + " " + Pikachu.color + " " + Pikachu.vida+ "  /  ") 
+
+//document.write(Charmander.nombre + " " + Charmander.color + " " + Charmander.vida)
 
